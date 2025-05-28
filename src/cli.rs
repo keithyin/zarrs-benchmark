@@ -14,6 +14,6 @@ pub enum Commands {
 
 #[derive(Args)]
 pub struct BamRwArgs {
-    
+
 
 }
