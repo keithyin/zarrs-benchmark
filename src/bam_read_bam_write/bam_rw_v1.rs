@@ -1,7 +1,7 @@
 use crossbeam::channel::bounded;
 use gskits::pbar::{DEFAULT_INTERVAL, get_spin_pb};
 use rust_htslib::bam::{self, Read};
-use std::{env, fs, path, thread, time::Instant};
+use std::{fs, path, thread, time::Instant};
 
 pub fn dump_smc_input_bam(subreads_bam_path: &str, o_filepath: &str, bam_threads: Option<usize>) {
     println!("Start");
@@ -53,4 +53,3 @@ pub fn dump_smc_input_bam(subreads_bam_path: &str, o_filepath: &str, bam_threads
 
     println!("End. ElapsedTime:{}", start_time.elapsed().as_secs());
 }
-
